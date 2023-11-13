@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-Title: 'Kanit', sans-serif;
+    --font-Body: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('/resources/img/bg_login.jpg') fixed no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+h1 {
+    width: auto;
+    font-family: var(--font-Title);
+    font-size: 1.6rem;
+    margin-left: 15px;
+    color: #c7c7c7;
+}
+
+
+.main_container {
+    max-width: 950px;
+    height: 450px;
+    z-index: 999;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+.box_1 {
+    position: relative;
+    left: -50px;
+    width: 650px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 15% 15% 0;
+    justify-content: center;
+    background-color: #FE5A02;
+    box-shadow: #1b0b02d5 10px -10px 25px 2px;
+}
+
+.box_1 img {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+}
+
+.box_effect {
+    position: absolute;
+    left: 21px;
+    top: -31px;
+    transform: rotate(70deg);
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    background-color: #CB4904 ;
+}
+
+.box_2 {
+    min-width: 500px;
+    min-height: 290px;
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+form {
+    width: 430px;
+    height: 200px;
+    display: flex;
+    padding: 15px;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.register_user_sp {
+    font-family: var(--font-Title);
+    font-size: 0.9rem;
+    color: #c7c7c7;
+}
+
+.a_register_now {
+    font-family: var(--font-Title);
+    font-size: 0.9rem;
+    color: #FE5A02;
+    text-decoration: none;
+}
+
+.a_register_now:hover {
+    color: #FF7F3B;
+    text-decoration: underline;
+}
+
+.input_user {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.input_pass {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+#user,
+#password {
+    width: 360px;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-Body);
+    background: transparent;
+    border: none;
+    color: #FE5A02;
+    border-bottom: 1px solid #FE5A02;
+}
+
+#user::placeholder,
+#password::placeholder {
+    font-size: 1.2rem;
+}
+
+#user:focus,
+#password:focus {
+    outline: none;
+}
+
+.btn_login {
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--font-Body);
+    color: #000;
+    border: none;
+    margin-right: 5px;
+    background-color: #FE5A02;
+}
+
+.btn_login:hover {
+    cursor: pointer;
+    background-color: #FF7F3B ;
+    transition: 0.3s ease;
+}
+
+@media screen and (min-width: 845px) and (max-width: 1070px) {
+
+    .main_container {
+        max-width: 650px;
+        height: 450px;
+        z-index: 999;
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_1 {
+        position: relative;
+        left: -50px;
+        width: 650px;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        border-radius: 0 15% 15% 0;
+        justify-content: center;
+        background-color: #FE5A02;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 844px) {
+
+    .main_container {
+        max-width: 360px;
+        height: 450px;
+        z-index: 999;
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_1 {
+        position: relative;
+        left: 0px;
+        width: 650px;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        border-radius: 0 15% 15% 0;
+        justify-content: center;
+        background-color: #FE5A02;
+    }
+
+    .box_2 {
+        position: relative;
+        min-width: 400px;
+        min-height: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    
+    form {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .register_user_sp {
+        font-family: var(--font-Title);
+        font-size: 0.9rem;
+        color: #c7c7c7;
+    }
+    
+    .a_register_now {
+        font-family: var(--font-Title);
+        font-size: 0.9rem;
+        color: #FE5A02;
+        text-decoration: none;
+    }
+    
+    .a_register_now:hover {
+        color: #FF7F3B;
+        text-decoration: underline;
+    }
+    
+    .input_user {
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .input_pass {
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    #user,
+    #password {
+        width: 360px;
+        height: 40px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-family: var(--font-Body);
+        background: transparent;
+        border: none;
+        color: #FE5A02;
+        border-bottom: 1px solid #FE5A02;
+    }
+    
+    #user::placeholder,
+    #password::placeholder {
+        font-size: 1.2rem;
+    }
+}

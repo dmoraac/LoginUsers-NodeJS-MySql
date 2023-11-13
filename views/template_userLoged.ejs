@@ -1,0 +1,15 @@
+<div class="container_userLogin">
+    <% if (login) { %>
+        <div class="user_active">
+            <span>Usuario activo: <strong><%= name %> <%= last_name1 %></strong></span>
+        </div>
+        <div class="btn_logout">
+            <a href="logout" class="a-logout">
+                <button>
+                    <span>Cerrar Sesión</span>
+                    <i class="fa-solid fa-right-from-bracket" style="color: #000000;"></i>
+                </button>
+            </a>
+        </div>
+    <% } %>
+</div>

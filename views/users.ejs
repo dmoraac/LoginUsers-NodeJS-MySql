@@ -1,0 +1,19 @@
+<%- include('template_head') %>
+<%- include('template_header') %>
+<div class="main_container_users">
+    <div class="register_container">
+        <h2>Registrar Usuario</h2>
+        <form class="form_register_user" action="/register" method="POST">
+            <input type="number" name="id" placeholder="Cédula ID" id="id" required>
+            <input type="text" name="name" placeholder="Nombre completo" id="name" required>
+            <input type="text" name="last_name1" placeholder="Primer Apellido" id="last_name1" required>
+            <input type="text" name="last_name2" placeholder="Segundo Apellido" id="last_name2" required>
+            <input type="text" name="user" placeholder="Usuario" id="user" required>
+            <input type="password" name="password" placeholder="Contraseña" id="password" required>
+            <div class="btn_container">
+                <button type="submit" class="btn_save_register"><span>Guardar</span></button>
+                <button type="button" class="btn_cancel"><a class="btn_cancel" href="/"><span>Cancelar</span></a></button>
+            </div>
+        </form>
+    </div>
+</div>

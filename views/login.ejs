@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/login.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="title">
+            <h1>Iniciar Sesión</h1>
+        </div>
+        <div class="content_box">
+            <div class="box_1">
+                <img src="/resources/img/logo-transparent.png" alt="Logo">
+                <div class="box_effect"></div>
+            </div>
+            <div class="box_2">
+                <form action="/auth" method="POST">
+                    <div class="input_user">
+                        <i class="fa-solid fa-user-large" style="color: #fe5a02;"></i><input type="text" name="user" placeholder="Usuario" id="user" >
+                    </div>
+                    <div class="input_pass">
+                        <i class="fa-solid fa-key" style="color: #fe5a02;"></i><input type="password" name="password" placeholder="Contraseña" id="password" >
+                    </div>
+                    <input type="submit" value="Ingresar" class="btn_login">
+                </form>
+                <span class="register_user_sp">¿No tienes acceso aún?</span><a class="a_register_now" href="/register">Registrarme</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Sweet Alert-->
+    <script src="https://kit.fontawesome.com/c323757261.js" crossorigin="anonymous"></script> <!--Font Awesome-->
+
+    <% if (typeof alert != 'undefined') { %>
+        <script>
+            Swal.fire ({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: '<%= showConfirmButton %>',
+                timer: '<%= timer %>',
+            }).then(() => {
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+    <% } %>
+</body>
+</html>

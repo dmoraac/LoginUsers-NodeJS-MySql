@@ -1,0 +1,24 @@
+{
+  "name": "inventory_app",
+  "version": "1.0.0",
+  "description": "Login y Administración de Usuarios.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Dylan Mora",
+  "license": "ISC",
+  "dependencies": {
+    "@sweetalert2/theme-minimal": "^5.0.15",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1",
+    "sweetalert2": "^11.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
